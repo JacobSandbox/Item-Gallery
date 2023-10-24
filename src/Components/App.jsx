@@ -15,9 +15,6 @@ function App() {
         {itemList.map ( item => CreateCard(item) )}
       </div>
       <Footer />
-
-      <div id="overlay"></div>
-      <Popup content="???" />
     </div>
   );
 }

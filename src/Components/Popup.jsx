@@ -3,7 +3,13 @@
 
 function Popup ( props ) {
     return (
-        <div className="popup">{props.content}</div>
+        <div id={props.id}
+             className="popup"
+             onMouseOut={e=>{
+                    e.target.style.display="none";
+                }}>
+             {props.content}
+        </div>
     );
 }
 
