@@ -7,6 +7,8 @@ function Popup ( props ) {
              className="popup"
              onMouseOut={e=>{
                     e.target.style.display="none";
+                    let o = document.getElementById("overlay");
+                    if ( o ) o.style.display = "none";
                 }}>
              {props.content}
         </div>

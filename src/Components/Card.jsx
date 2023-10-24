@@ -3,10 +3,6 @@ import React from "react";
 import RatingIcon from "./RatingIcon";
 import Popup from "./Popup";
 
-function handleMouseEvent ( event ) {
-    document.querySelector("");
-}
-
 function Card ( props ) {
     return (
         <div className="card-container">
@@ -17,6 +13,8 @@ function Card ( props ) {
                     <p>{props.desc}</p>
                     <div onClick={(e)=>{
                         document.getElementById(""+props.id).style.display = "block";
+                        let o = document.getElementById("overlay");
+                        if ( o ) o.style.display = "block";
                     }}>
                     i
                     </div>
