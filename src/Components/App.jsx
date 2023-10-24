@@ -5,15 +5,19 @@ import {CreateCard} from "./Card";
 import itemList from "../items";
 import Header from "./Header";
 import Footer from "./Footer";
+import Popup from "./Popup";
 
 function App() {
   return (
     <div>
-    <Header />
+      <Header />
       <div className="gallery">
         {itemList.map ( item => CreateCard(item) )}
       </div>
       <Footer />
+
+      <div id="overlay"></div>
+      <Popup content="???" />
     </div>
   );
 }
